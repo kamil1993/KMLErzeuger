@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="application.Controller">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="getFixes" mnemonicParsing="false" onAction="#getGpsFixes" text="get fixes">
+                     <HBox.margin>
+                        <Insets bottom="11.0" left="11.0" right="11.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="exportKML" mnemonicParsing="false" onAction="#exportKMLDatei" text="export kml">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="22.0" right="22.0" top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <TextArea fx:id="logger" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
